@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Programas{% endblock %}</title>
+    <style>
+        body { font-family: sans-serif; margin: 40px; }
+        .caja { max-width: 450px; margin: auto; padding: 20px; border: 1px solid #ccc; }
+        input[type="text"] { width: 100%; padding: 6px; margin-top: 4px; box-sizing: border-box; }
+        button { padding: 8px 14px; cursor: pointer; }
+        .ok { background: #e6f4ea; padding: 8px; margin-bottom: 12px; border: 1px solid #b7dfbf; }
+    </style>
+</head>
+<body>
+    <div class="caja">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

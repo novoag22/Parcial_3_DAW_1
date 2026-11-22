@@ -9,3 +9,13 @@ class Profile(models.Model):
 
     def __str__(self):
         return f"{self.name} {self.last_name}"
+
+class Programa(models.Model):
+    codigo = models.CharField(max_length=50, unique=True)
+    nombre = models.CharField(max_length=256)
+    estado = models.BooleanField(default=True)
+    facultad = models.CharField(max_length=256)
+
+    def __str__(self):
+        return f"{self.codigo} - {self.nombre}"
+    
